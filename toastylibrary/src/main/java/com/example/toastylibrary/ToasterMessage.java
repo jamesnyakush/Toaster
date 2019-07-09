@@ -19,7 +19,7 @@ public class ToasterMessage {
         View toastView = inflater.inflate(R.layout.succes, null);
 
         // Initiate the Toast instance.
-        Toast toast = new Toast(c);
+        Toast toast = new Toast(c.getApplicationContext());
         toast.setText(message);
         toast.setView(toastView);
         toast.setDuration(Toast.LENGTH_SHORT);
