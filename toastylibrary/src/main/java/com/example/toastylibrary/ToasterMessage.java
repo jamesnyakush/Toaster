@@ -14,14 +14,15 @@ public class ToasterMessage {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 
-
+//        Toast.makeText(c,message, Toast.LENGTH_SHORT).show();
 
         View toastView = inflater.inflate(R.layout.succes, null);
 
         // Initiate the Toast instance.
         Toast toast = new Toast(c.getApplicationContext());
-        toast.setText(message);
+
         toast.setView(toastView);
+//        toast.setText(message);
         toast.setDuration(Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.BOTTOM, 0,0);
         toast.show();
