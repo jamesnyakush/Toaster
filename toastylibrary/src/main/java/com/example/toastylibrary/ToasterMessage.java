@@ -19,11 +19,11 @@ public class ToasterMessage {
         View toastView = inflater.inflate(R.layout.succes, null);
 
         // Initiate the Toast instance.
-        Toast toast = new Toast(c.getApplicationContext());
-        // Set custom view in toast.
+        Toast toast = new Toast(c);
+        toast.setText(message);
         toast.setView(toastView);
         toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.CENTER, 0,0);
+        toast.setGravity(Gravity.BOTTOM, 0,0);
         toast.show();
 
     }
