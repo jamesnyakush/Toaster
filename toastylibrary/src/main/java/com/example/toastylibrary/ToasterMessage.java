@@ -14,7 +14,7 @@ public class ToasterMessage {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 
-//        Toast.makeText(c,message, Toast.LENGTH_SHORT).show();
+
 
         View toastView = inflater.inflate(R.layout.succes, null);
 
