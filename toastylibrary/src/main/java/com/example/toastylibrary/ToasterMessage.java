@@ -25,7 +25,7 @@ public class ToasterMessage {
         Toast toast = new Toast(c.getApplicationContext());
 
         toast.setView(toastView);
-        toast.setText(message);
+//        toast.setText(message);
         toast.setDuration(duration);
         toast.setGravity(Gravity.BOTTOM, 0,0);
         toast.show();
