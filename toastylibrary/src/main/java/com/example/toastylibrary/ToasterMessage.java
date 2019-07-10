@@ -11,7 +11,7 @@ public class ToasterMessage {
     public static final int LENGTH_SHORT = Toast.LENGTH_SHORT;
     public static final int LENGTH_LONG = Toast.LENGTH_LONG;
 
-    public static void s(Context c, @StringRes int message,int duration){
+    public static void s(Context c, String message,int duration){
 
         LayoutInflater inflater = (LayoutInflater) c.getApplicationContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -25,7 +25,7 @@ public class ToasterMessage {
         Toast toast = new Toast(c.getApplicationContext());
 
         toast.setView(toastView);
-        toast.setText( c.getString(message));
+        toast.setText(message);
         toast.setDuration(duration);
         toast.setGravity(Gravity.BOTTOM, 0,0);
         toast.show();
